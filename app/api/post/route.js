@@ -8,4 +8,4 @@ export default function handler(req, res) {
   return NextResponse.json({ name: "lalchand" });
 }
 
-const handler = () => {};
+// const handler = () => {};
