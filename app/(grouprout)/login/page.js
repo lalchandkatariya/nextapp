@@ -1,7 +1,9 @@
 "use client";
+import { useRouter } from "next/navigation";
 import React from "react";
 
 const login = () => {
+  const router = useRouter();
   return (
     <>
       <div className="h-screen w-full flex flex-col justify-center items-center px-6 py-12 lg:px-8">
@@ -11,8 +13,8 @@ const login = () => {
             src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
             alt="Your Company"
           />
-          <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
-            Sign in to your account
+          <h2 className="mt-10 text-center text-3xl font-bold leading-9 tracking-tight text-gray-900">
+            {` Sign in to your account`}
           </h2>
         </div>
 
@@ -68,7 +70,7 @@ const login = () => {
 
             <div>
               <button
-                type="submit"
+                onClick={() => router.push("/blog")}
                 className="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                 Sign in

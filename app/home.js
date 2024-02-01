@@ -7,7 +7,7 @@ const links = [
   { link: "Blog", path: "/blog" },
   { link: "Blog Post", path: "/blog/posts" },
   { link: "Articles", path: "/blog/articles" },
-  { link: "Company", path: "/blog/articles/dsa" },
+  { link: "Company", path: "/blog/ragistration" },
   { link: "Shadcn", path: "/shadcn" },
 ];
 
